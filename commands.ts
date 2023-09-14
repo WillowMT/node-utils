@@ -1,10 +1,10 @@
-interface template {
+export interface template {
     packages: string[];
     commands: string[];
 }
 
 export const jest: template = {
-    packages: ["jest", "babel-jest", "@babel/coreD", "@babel/preset-env"],
+    packages: ["jest", "babel-jest", "@babel/core", "@babel/preset-env"],
     commands: ['npm pkg set scripts.test="jest"'],
 };
 
